@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene >
+      <a-asset-item src="heart.dae"></a-asset-item>
+      <a-text 
+        position="0 0 -10"
+        scale="10 10 10"
+        font="mozillavr" 
+        align="center" 
+        anchor="center" 
+        value="Te amo, mi amor!">
+      </a-text>
+      <!-- <a-box position="0 1.6 -2" rotation="0 45 30" width="1" height="1" deoth="1"></a-box> -->
+
+      <a-entity id="cameraman" position="-40 40 40">
+        <a-camera></a-camera>
+        <a-animation attribute="position" from="-40 40 40" to="0 0 0" dur="2000" begin="1000"></a-animation>
+      </a-entity>
+
+      <a-sky color="skyblue"></a-sky>
+    </a-scene>
+  </body>
+</html>
